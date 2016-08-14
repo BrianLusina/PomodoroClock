@@ -8,7 +8,11 @@ body{
 /**--------------------------------------
 HEADER
 ------------------------------------*/
-
+header h2{
+	font-size: 35px;
+	color:white;
+	font-family: Poiret One;
+}
 /**--------------------------------------
 SECTIONS
 ------------------------------------*/
@@ -24,7 +28,7 @@ footer{
 }
 
 footer a{
-	color:white;
+	color:wheat;
 }
 
 footer a:hover{
