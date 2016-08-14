@@ -2,6 +2,7 @@ body{
     margin:0px;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:#274140;
 }
 
 /**--------------------------------------
@@ -17,4 +18,19 @@ SECTIONS
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
+footer{
+	text-align: center;
+	color:white;
+}
 
+footer a{
+	color:white;
+}
+
+footer a:hover{
+	color:burlywood;
+}
+
+footer p{
+	font-family: Raleway;
+}
