@@ -31,10 +31,28 @@ SECTIONS
 .control,
 .v{
 	color:white;
+	font-weight: 800;
+	font-family: Poiret One;
 	font-size: 20px;
 }
 
+.control{
+	font-size: 25px;
+}
 
+.status{
+	color:white;
+	text-align: center;
+	margin:25px;
+	padding:5px;
+	font-family: Poiret One;
+	font-weight: 800;
+}
+
+.status:hover{
+	color:wheat;
+	cursor: crosshair;
+}
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
