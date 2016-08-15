@@ -49,10 +49,21 @@ SECTIONS
 	font-weight: 800;
 }
 
-.status:hover{
+.status:hover,
+.pomodoro-btns:hover
+{
 	color:wheat;
 	cursor: crosshair;
 }
+
+.pomodoro-btns{
+	text-align: center;
+	color:white;
+	padding:5px;
+	margin:20px;
+	font-family: Poiret One;
+}
+
 /**--------------------------------------
 FOOTER
 ------------------------------------*/
