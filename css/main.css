@@ -14,10 +14,25 @@ header h2{
 	font-family: Poiret One;
 	text-align: center;
 }
+
+.underline{
+	width:20%;
+}
 /**--------------------------------------
 SECTIONS
 ------------------------------------*/
+.Settings{
+	text-align: center;
+	margin:20px;
+	padding:25px;
+}
 
+.description,
+.control,
+.v{
+	color:white;
+	font-size: 20px;
+}
 
 
 /**--------------------------------------
