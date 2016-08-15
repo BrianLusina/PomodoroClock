@@ -40,18 +40,53 @@ SECTIONS
 	font-size: 25px;
 }
 
-.status{
-	color:white;
-	text-align: center;
-	margin:25px;
-	padding:5px;
-	font-family: Poiret One;
-	font-weight: 800;
+
+/*Pomodoro clock settings*/
+.fill{
+ width: 100%;
+  height: 0%;
+  position: absolute;
+  left: 0;
 }
 
-.status:hover,
-.pomodoro-btns:hover
-{
+/*style for when the pomodoro clock fills*/
+.fill.session{
+  bottom: 0;
+  z-index: 2;
+  background-color: #2ecc71;
+}
+
+/*style for when the clock hits a break*/
+.fill.break{
+  top: 0;
+  z-index: 3;
+  background-color: #c0392b;
+}
+
+/*style for displaying the time left*/
+.time-left{
+  top: 32%;
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  text-align: center;
+  font-size: 60px;
+  z-index: 4;
+  position: absolute;	
+}
+
+/*play button*/
+.status{
+  left: 50%;
+  margin-left: -125px;
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+  z-index: 4;
+  position: absolute;
+}
+
+.pomodoro-btns:hover{
 	color:wheat;
 	cursor: crosshair;
 }
