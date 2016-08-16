@@ -37,16 +37,19 @@ SECTIONS
 }
 
 .control{
-	font-size: 25px;
+	 font-size: 33px;
+  cursor: pointer;
 }
 
+.control:hover{
+	
+}
 
 /*Pomodoro clock settings*/
 .fill{
  width: 100%;
   height: 0%;
   position: absolute;
-  left: 0;
 }
 
 /*style for when the pomodoro clock fills*/
@@ -54,12 +57,16 @@ SECTIONS
   bottom: 0;
   z-index: 2;
   background-color: #2ecc71;
+	clear: both;
+  border-radius: 50%;
 }
 
 /*style for when the clock hits a break*/
 .fill.break{
   top: 0;
   z-index: 3;
+	clear: both;
+  border-radius: 50%;	
   background-color: #c0392b;
 }
 

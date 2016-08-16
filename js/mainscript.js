@@ -112,7 +112,7 @@ $(document).ready(function(){
 	});
 	
 	
-	$('.pomodoro > btn-floating').on('click', function() {
+	$('.pomodoro .btn-floating').on('click', function(){
 		if (isPaused) {
 			startPomodoro();
 		} else {
