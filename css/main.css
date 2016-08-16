@@ -42,7 +42,7 @@ SECTIONS
 }
 
 .control:hover{
-	
+	color:firebrick;
 }
 
 /*Pomodoro clock settings*/
@@ -72,7 +72,7 @@ SECTIONS
 
 /*style for displaying the time left*/
 .time-left{
-  top: 32%;
+  top: 60%;
   left: 50%;
   margin-left: -125px;
   width: 250px;
