@@ -78,5 +78,21 @@ $(document).ready(function(){
 		  );
       }
     };
+	
+	/*function to start the pomodoro*/
+	var startPomodoro = function() {
+      intervalCounter = setInterval(function() {
+        if (timeLeft > 0) {
+          timeLeft--;
+          $('.pomodoro>.time-left').text(fomartTime());
+        } else
+          nextStep();
+      }, 1000);
+		isPaused = false;
+      	isSession = !isSession;
+      	nextStep();
+		$('.status > .a').removeClass('red').addClass('green')
+    };
+ 
  
 });
