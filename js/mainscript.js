@@ -3,7 +3,7 @@ $(document).ready(function(){
 		breakLength = 5,
 		isSession = true,
 		timeLeft = sessionLength * 60,
-		isPauses = true;
+		isPaused = true;
 
 	/*function to format time*/
 	var fomartTime = function(){
@@ -19,6 +19,21 @@ $(document).ready(function(){
 	/*function to update Session settings*/
 	var updateSettingsTimeValues = function() {
       $('.Settings>.break>.value>.v').text(breakLength); $('.Settings>.session>.value>.v').text(sessionLength);
-    }
+    };
+	
+	/*function to pause the pomodoro*/
+	var pausePomodoro = function() {
+      if (fillAnimationSess !== null)
+        fillAnimationSess.stop();
+      if (fillAnimationBreak !== null)
+        fillAnimationBreak.stop();
+      isPaused = true;
+      clearInterval(intervalCounter);
+		
+		/*add stop material icon, when button is clicked*/
+		$('.status > a > .material-icons').text('stop');
+		$('.status > .a').removeClass('green').addClass('red')
+    };
+ 
 
 });
