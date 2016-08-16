@@ -83,16 +83,64 @@ $(document).ready(function(){
 	var startPomodoro = function() {
       intervalCounter = setInterval(function() {
         if (timeLeft > 0) {
-          timeLeft--;
-          $('.pomodoro>.time-left').text(fomartTime());
-        } else
+			timeLeft--;
+			$('.pomodoro>.time-left').text(fomartTime());
+		} else
           nextStep();
-      }, 1000);
+	  }, 1000);
 		isPaused = false;
       	isSession = !isSession;
       	nextStep();
 		$('.status > .a').removeClass('red').addClass('green')
     };
- 
+	
+	$('.pomodoro>.time-left').text(fomartTime());
+	
+	/*execute refresh when the refresh button is clicked*/
+	$('.reset-pomodoro').on('click', function() {
+		pausePomodoro();
+		isSession = !isSession;
+		nextStep();
+		$('.pomodoro>.time-left').text(fomartTime());
+	});
+	
+	/*next button event handler*/
+	$('.next-pomodoro').on('click', function() {
+		pausePomodoro();
+		isSession = !isSession;
+		startPomodoro();
+	});
+	
+	
+	$('.pomodoro > btn-floating').on('click', function() {
+		if (isPaused) {
+			startPomodoro();
+		} else {
+			pausePomodoro();
+		}
+	});
+	
+	/*event handler for settings button*/
+	$('.control').on('click', function() {
+		if ($(this).hasClass('is') && sessionLength < 100)
+		  sessionLength++;
+		else if ($(this).hasClass('ds') && sessionLength > 1)
+		  sessionLength--;
+		else if ($(this).hasClass('ib') && breakLength < 100)
+		  breakLength++;
+		else if ($(this).hasClass('db') && breakLength > 1)
+		  breakLength--;
+		else
+		  return false;
+
+		pausePomodoro();
+		if (isSession) {
+		  timeLeft = sessionLength * 60;
+		} else {
+		  timeLeft = breakLength * 60;
+		}
+		$('.pomodoro>.time-left').text(fomartTime());
+		updateSettingsTimeValues();
+	});
  
 });
