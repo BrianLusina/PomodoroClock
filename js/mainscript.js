@@ -31,9 +31,52 @@ $(document).ready(function(){
       clearInterval(intervalCounter);
 		
 		/*add stop material icon, when button is clicked*/
-		$('.status > a > .material-icons').text('stop');
-		$('.status > .a').removeClass('green').addClass('red')
+		$('.status > a > .material-icons').text('play_arrow');
+		$('.status > .a').removeClass('red').addClass('green')
     };
  
-
+	/*function to handle the next button*/
+   var nextStep = function() {
+      if (isSession) {
+		  /*get the time left*/
+		  timeLeft = breakLength * 60;
+		  
+		  /*fill the session*/
+		  $('.fill.session').animate(
+			  {height: '100%'}, 
+			  500);
+		  
+		  /*fill the break*/
+		  $('.fill.break').animate(
+			  {height: '0%'}, 
+			  500
+		  );
+		  
+		  fillAnimationBreak = $('.fill.break').animate(
+			  {height: '100%'},
+			  (timeLeft * 1000)
+		  );
+		  isSession = false;
+	  }else {
+		  
+		  $('.fill.session').animate(
+			  {height: '0%'}, 
+			  500
+		  );
+		  
+		  $('.fill.break').animate(
+			  {height: '0%'}, 
+			  500
+		  );
+		  isSession = true;
+		  
+		  timeLeft = sessionLength * 60;
+		  
+		  fillAnimationSess = $('.fill.session').animate(
+			  {height: '100%'}, 
+			  (timeLeft * 1000)
+		  );
+      }
+    };
+ 
 });
