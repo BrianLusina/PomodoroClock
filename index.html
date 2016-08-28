@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 
 		<!--Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway|Material+Icons|Cormorant|Cormorant+SC|Cormorant+Upright|Poiret+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Material+Icons|Poiret+One|Open+Sans:400,600,300" rel="stylesheet">
 	</head>
 
 	<body>
@@ -32,48 +32,46 @@
 		<header>
 			<div class="row">
 				<div class="small-12 medium-12 large-12 columns">
-					<h2>Pomodoro Clock</h2>
+					<h2 id="title">Pomodoro Clock</h2>
 					<hr class="underline">
 				</div>
 			</div>
 		</header>
 <!-------------------------------------------------------------------------------------------->
 		<!--Sections-->
-		<section class="center">
-		 <div class="settings">
-			<div class="break">
-			  <div class="description">Break Length</div>
-			  <div class="value">
-				<span class="control db">-</span> <span class="v">5</span> <span class="control ib">+</span>
-			  </div>
-			</div>
-			<div class="session">
-			  <div class="description">Session Length</div>
-			  <div class="value">
-				<span class="control ds">-</span> <span class="v">25</span> <span class="control is">+</span>
-			  </div>
-			</div>
-		  </div>
-		  <div class="pomodoro">
-			<div class="fill session">
-			</div>
-			<div class="fill break">
-			</div>
-			<div class="time-left">
-			</div>
+		<section class="clock">
+			<div class="settings">
+				<div class="break">
+			  		<div class="description">Break</div>
+			  		<div class="value">
+						<span class="control db">-</span> <span class="v">5</span> <span class="control ib">+</span>
+			  		</div>
+				</div>
+				<div class="session">
+			  		<div class="description">Session</div>
+			  		<div class="value">
+						<span class="control ds">-</span> <span class="v">25</span> <span class="control is">+</span>
+			  		</div>
+				</div>
+		  	</div>
+		  	<div class="pomodoro">
+				<div class="fill session"></div>
+				<div class="fill break"></div>
+				<div class="time-left"></div>
 			<div class="status">Click to Start</div>
-		  </div>
-		  <div class="next-pomodoro">
+			</div>
+		  
+			<div class="next-pomodoro">
 			Next
-		  </div>
-		  <div class="reset-pomodoro">
+			</div>
+			<div class="reset-pomodoro">
 			Reset
-		  </div>
+			</div>
 		</section>
 <!-------------------------------------------------------------------------------------------->
 		<!--Footer-->
-        <footer>
-			<p>Created by <a href="http://codepen.io/thelusina">The Lusina</a> with <i class="fa fa-clock-o"></i> in mind.</p>
+        <footer class="footer">
+			<p>Created by <a href="http://codepen.io/thelusina">The Lusina</a> using <i class="fa fa-clock-o"></i>.</p>
         </footer>
 <!-------------------------------------------------------------------------------------------->
 		<!--Vendor Scripts-->
