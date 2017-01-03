@@ -1,0 +1,43 @@
+.clock .settings {
+  width: 350px;
+  padding-bottom: 15px;
+  display: table;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.clock .settings .description {
+  font-size: 15px;
+}
+.clock .settings .value {
+  font-size: 30px;
+}
+.clock .settings .session {
+  width: 108px;
+  float: right;
+}
+.clock .settings .session .description {
+	font-size: 25px;
+	color: #2ecc71;
+}
+.clock .settings .break {
+  width: 100px;
+  float: left;
+}
+.clock .settings .break .description {
+  color: #e74c3c;
+	font-size: 25px;
+}
+.clock .settings .control {
+  font-size: 33px;
+  cursor: pointer;
+}
+.clock .settings .control:hover {
+  color: #95a5a6;
+}

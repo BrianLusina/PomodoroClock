@@ -1,12 +1,12 @@
 import Buttons from './Buttons';
 import Settings from './Settings';
 import React, { Component } from 'react';
-
+import '../../styles/body.css'
 
 export default class Body extends Component{
     render(){
         return(
-            <div>
+            <section className="clock">
                 <Settings />
                 <div className="pomodoro">
                     <div className="fill session"></div>
@@ -15,7 +15,7 @@ export default class Body extends Component{
                 <div className="status">Click to Start</div>
                 </div>
                 <Buttons />
-            </div>
+            </section>
         )
     }
 }
