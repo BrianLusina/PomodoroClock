@@ -3,7 +3,6 @@ import Footer from './Footer';
 import Body from './clock/Body';
 import React, { Component } from 'react';
 import '../styles/reset.css';
-import '../styles/materialize.min.css';
 import '../styles/foundation/foundation.min.css';
 import '../styles/font-awesome/css/font-awesome.min.css';
 import '../styles/App.css';
