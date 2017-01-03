@@ -1,0 +1,28 @@
+
+.footer {
+  clear: both;
+  width: 100%;
+	padding-top: 50px;
+  font-size: 22px;
+  text-align: center;
+}
+.footer a {
+  color: #2ecc71;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover{
+	color:chocolate;
+	transition:2s color;
+}
+
+.footer a:hover::after{
+	content:"]";
+	transition: 2s content;
+}
+
+.footer a:hover::before{
+	content:'[';
+	transition: 2s content;
+}
