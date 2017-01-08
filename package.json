@@ -14,14 +14,20 @@
   "bugs": {
     "url": "https://github.com/BrianLusina/PomodoroClock/issues"
   },
-  "homepage": "https://brianlusina.github.io/PomodoroClock/",
   "devDependencies": {
     "gh-pages": "^0.12.0",
-    "react-scripts": "0.8.4"
+    "git-scripts": "^0.2.1",
+    "react-scripts": "0.8.4",
+    "surge": "^0.18.0"
   },
   "dependencies": {
     "react": "^15.4.1",
     "react-dom": "^15.4.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./build --domain pomodoroclock.surge.sh"
+    }
   },
   "scripts": {
     "start": "react-scripts start",
