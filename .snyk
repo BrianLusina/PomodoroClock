@@ -998,3 +998,13 @@ patch:
         patched: '2020-05-01T07:09:57.042Z'
     - react-scripts > jest > jest-cli > jest-runtime > babel-jest > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
         patched: '2020-05-01T07:09:57.042Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-transform-class-properties > babel-template > lodash:
+        patched: '2020-06-09T05:04:24.228Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-transform-class-properties > babel-template > babel-types > lodash:
+        patched: '2020-06-09T05:04:24.228Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-transform-regenerator > regenerator-transform > babel-types > lodash:
+        patched: '2020-06-09T05:04:24.228Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-transform-class-properties > babel-template > babel-traverse > lodash:
+        patched: '2020-06-09T05:04:24.228Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-transform-class-properties > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-06-09T05:04:24.228Z'
