@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.16.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -998,3 +998,84 @@ patch:
         patched: '2020-05-01T07:09:57.042Z'
     - react-scripts > jest > jest-cli > jest-runtime > babel-jest > babel-core > babel-register > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
         patched: '2020-05-01T07:09:57.042Z'
+    - react-scripts > react-dev-utils > inquirer > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > react-error-overlay > react-dev-utils > inquirer > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-dynamic-import-node > babel-types > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-dynamic-import-node > babel-template > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-dynamic-import-node > babel-template > babel-types > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-dynamic-import-node > babel-template > babel-traverse > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-plugin-dynamic-import-node > babel-template > babel-traverse > babel-types > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > babel-preset-react-app > babel-preset-env > babel-plugin-transform-regenerator > regenerator-transform > babel-types > lodash:
+        patched: '2020-07-21T05:21:47.226Z'
+  'npm:debug:20170905':
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > braces > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > braces > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > braces > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > extglob > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > extglob > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > nanomatch > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > nanomatch > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2020-07-21T05:21:47.226Z'
+  'npm:hoek:20180212':
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-07-21T05:21:47.226Z'
+  'npm:ms:20170412':
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > braces > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > braces > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > braces > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > extglob > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > nanomatch > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > anymatch > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack > watchpack > watchpack-chokidar2 > chokidar > readdirp > micromatch > extglob > expand-brackets > snapdragon > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2020-07-21T05:21:47.226Z'
+  'npm:qs:20170213':
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > qs:
+        patched: '2020-07-21T05:21:47.226Z'
+  'npm:tunnel-agent:20170305':
+    - react-scripts > webpack-dev-server > chokidar > fsevents > node-pre-gyp > request > tunnel-agent:
+        patched: '2020-07-21T05:21:47.226Z'
