@@ -21,9 +21,9 @@
     "surge": "^0.21.6"
   },
   "dependencies": {
+    "snyk": "^1.415.0",
     "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "snyk": "^1.406.0"
+    "react-dom": "^16.14.0"
   },
   "git": {
     "scripts": {
