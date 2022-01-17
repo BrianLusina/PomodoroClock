@@ -18,7 +18,7 @@
     "gh-pages": "^1.0.0",
     "git-scripts": "^0.4.3",
     "react-scripts": "5.0.0",
-    "surge": "^0.23.0"
+    "surge": "^0.23.1"
   },
   "dependencies": {
     "snyk": "^1.797.0",
