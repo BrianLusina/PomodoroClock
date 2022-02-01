@@ -15,7 +15,7 @@
     "url": "https://github.com/BrianLusina/PomodoroClock/issues"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^3.2.3",
     "git-scripts": "^0.4.3",
     "react-scripts": "5.0.0",
     "surge": "^0.23.1"
